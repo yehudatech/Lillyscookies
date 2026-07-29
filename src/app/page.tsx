@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 import { CookieCard } from "@/components/CookieCard";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { cookies } from "@/lib/menu";
+import { popularCookies } from "@/lib/menu";
 
 export default function Home() {
   return (
@@ -36,12 +37,12 @@ export default function Home() {
                 specialties. Baked fresh, made to share.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href="#menu"
+                <Link
+                  href="/menu"
                   className="rounded-full bg-cocoa px-6 py-3 text-sm font-semibold text-sugar transition hover:bg-cocoa-soft"
                 >
                   Browse the menu
-                </a>
+                </Link>
                 <a
                   href="#about"
                   className="rounded-full border border-cocoa/15 bg-sugar px-6 py-3 text-sm font-semibold text-cocoa transition hover:border-caramel/40 hover:text-caramel"
@@ -96,24 +97,35 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Menu */}
-        <section id="menu" className="border-t border-cocoa/8 bg-sugar/60 py-16 sm:py-20">
+        {/* Popular picks */}
+        <section
+          id="popular"
+          className="border-t border-cocoa/8 bg-sugar/60 py-16 sm:py-20"
+        >
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
-            <div className="mb-10 max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-caramel">
-                The menu
-              </p>
-              <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
-                What&apos;s baking
-              </h2>
-              <p className="mt-3 text-cocoa-soft">
-                House classics you can always count on, plus limited and seasonal
-                flavors that rotate with the calendar.
-              </p>
+            <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div className="max-w-2xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-caramel">
+                  Customer favorites
+                </p>
+                <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
+                  Popular picks
+                </h2>
+                <p className="mt-3 text-cocoa-soft">
+                  A few of our most-loved cookies. See the full menu for every
+                  classic, limited, and seasonal flavor.
+                </p>
+              </div>
+              <Link
+                href="/menu"
+                className="shrink-0 rounded-full border border-cocoa/15 bg-sugar px-5 py-2.5 text-sm font-semibold text-cocoa transition hover:border-caramel/40 hover:text-caramel"
+              >
+                View full menu
+              </Link>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {cookies.map((cookie) => (
+              {popularCookies.map((cookie) => (
                 <CookieCard key={cookie.id} cookie={cookie} />
               ))}
             </div>

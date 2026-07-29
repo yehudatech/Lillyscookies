@@ -5,6 +5,7 @@ export type CookieItem = {
   description: string;
   notes: string[];
   status: "seasonal" | "limited" | "classic";
+  popular?: boolean;
 };
 
 export const cookies: CookieItem[] = [
@@ -16,6 +17,7 @@ export const cookies: CookieItem[] = [
       "Toasty brown butter, white chocolate, and a whisper of miso. Sweet, salty, and unforgettable.",
     notes: ["umami", "caramel", "chewy edge"],
     status: "classic",
+    popular: true,
   },
   {
     id: "lavender-honey",
@@ -34,6 +36,7 @@ export const cookies: CookieItem[] = [
       "70% cacao chunks, roasted nibs, flaky salt. For people who take chocolate seriously.",
     notes: ["bitter-sweet", "crunch", "salt"],
     status: "classic",
+    popular: true,
   },
   {
     id: "yuzu-white-session",
@@ -52,6 +55,7 @@ export const cookies: CookieItem[] = [
       "Warm cardamom, sticky date pieces, toasted sesame. Cozy without being heavy.",
     notes: ["spice", "chewy", "sesame"],
     status: "limited",
+    popular: true,
   },
   {
     id: "olive-oil-rosemary",
@@ -63,6 +67,8 @@ export const cookies: CookieItem[] = [
     status: "seasonal",
   },
 ];
+
+export const popularCookies = cookies.filter((cookie) => cookie.popular);
 
 export const statusLabel: Record<CookieItem["status"], string> = {
   seasonal: "Seasonal",
