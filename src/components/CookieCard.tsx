@@ -1,8 +1,8 @@
 import { statusLabel, type CookieItem } from "@/lib/menu";
 
 const statusStyles: Record<CookieItem["status"], string> = {
-  lab: "bg-berry/10 text-berry",
-  drop: "bg-caramel/15 text-caramel",
+  seasonal: "bg-berry/10 text-berry",
+  limited: "bg-caramel/15 text-caramel",
   classic: "bg-mint/15 text-mint",
 };
 

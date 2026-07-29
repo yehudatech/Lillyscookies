@@ -7,7 +7,7 @@ export function Footer() {
             Lilly&apos;s Cookies
           </p>
           <p className="mt-1 text-sm text-cream/70">
-            Experimental bakery lab · small batches · big flavor R&amp;D
+            Handcrafted cookies · small batches · made with care
           </p>
         </div>
         <p className="text-sm text-cream/55">

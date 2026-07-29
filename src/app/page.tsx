@@ -24,16 +24,16 @@ export default function Home() {
             <div>
               <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-caramel/30 bg-sugar px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-caramel">
                 <span className="h-1.5 w-1.5 rounded-full bg-caramel" />
-                Flavor experiments · limited drops
+                Small batches · fresh flavors
               </p>
               <h1 className="font-[family-name:var(--font-fraunces)] text-4xl font-semibold leading-[1.1] tracking-tight text-cocoa sm:text-5xl lg:text-6xl">
-                Cookies that feel like
-                <span className="block text-caramel">R&amp;D for your taste buds.</span>
+                Cookies made with
+                <span className="block text-caramel">care, flavor &amp; a little magic.</span>
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-cocoa-soft sm:text-lg">
-                Lilly&apos;s Cookies is an experimental bakery lab — small batches,
-                unexpected pairings, and honest notes from the test kitchen. Not a
-                chain. Not a catalog. Just delicious experiments.
+                Lilly&apos;s Cookies is a handcrafted bakery focused on small
+                batches and standout flavors — from house classics to seasonal
+                specialties. Baked fresh, made to share.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -43,17 +43,17 @@ export default function Home() {
                   Browse the menu
                 </a>
                 <a
-                  href="#lab"
+                  href="#about"
                   className="rounded-full border border-cocoa/15 bg-sugar px-6 py-3 text-sm font-semibold text-cocoa transition hover:border-caramel/40 hover:text-caramel"
                 >
-                  How the lab works
+                  Our story
                 </a>
               </div>
               <dl className="mt-12 grid max-w-md grid-cols-3 gap-4 border-t border-cocoa/10 pt-8">
                 {[
-                  { label: "Active trials", value: "12+" },
-                  { label: "Batch size", value: "tiny" },
-                  { label: "Flavors", value: "weird→good" },
+                  { label: "Cookie flavors", value: "12+" },
+                  { label: "Batch size", value: "small" },
+                  { label: "Made", value: "by hand" },
                 ].map((stat) => (
                   <div key={stat.label}>
                     <dt className="text-[11px] uppercase tracking-wider text-cocoa-soft/80">
@@ -70,24 +70,24 @@ export default function Home() {
             <div className="relative">
               <div className="rounded-[2rem] border border-cocoa/10 bg-gradient-to-br from-sugar via-cream to-cream-deep p-6 shadow-[0_30px_80px_-40px_rgba(59,36,22,0.55)] sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-berry">
-                  Today&apos;s lab note
+                  From the kitchen
                 </p>
                 <h2 className="mt-3 font-[family-name:var(--font-fraunces)] text-2xl font-semibold text-cocoa">
-                  Brown butter + miso is still winning.
+                  Brown butter miso is a crowd favorite.
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-cocoa-soft">
-                  Third pass on Batch 07: longer rest, bigger flakes of salt, less
-                  white chocolate. The umami comes through without tasting “savory
-                  dinner.” Shipping this as a limited drop next weekend.
+                  Toasty brown butter, white chocolate, and a touch of miso —
+                  sweet, salty, and perfectly chewy. Available this weekend as a
+                  limited drop, while supplies last.
                 </p>
                 <div className="mt-6 flex items-center gap-3 rounded-2xl bg-cocoa px-4 py-3 text-cream">
                   <span className="text-2xl" aria-hidden>
-                    🧪
+                    🍪
                   </span>
                   <div>
-                    <p className="text-sm font-semibold">Status: tasting panel open</p>
+                    <p className="text-sm font-semibold">Limited drop this weekend</p>
                     <p className="text-xs text-cream/70">
-                      Sign up below if you want a seat at the next drop.
+                      Join the list below for first access.
                     </p>
                   </div>
                 </div>
@@ -101,14 +101,14 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="mb-10 max-w-2xl">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-caramel">
-                The board
+                The menu
               </p>
               <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
-                What&apos;s baking in the lab
+                What&apos;s baking
               </h2>
               <p className="mt-3 text-cocoa-soft">
-                Some are house classics. Some are one-weekend drops. Some may never
-                leave the notebook. That&apos;s the point.
+                House classics you can always count on, plus limited and seasonal
+                flavors that rotate with the calendar.
               </p>
             </div>
 
@@ -120,26 +120,26 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Lab */}
-        <section id="lab" className="py-16 sm:py-20">
+        {/* About */}
+        <section id="about" className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-mint">
-                  The lab
+                  About us
                 </p>
                 <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
-                  An experimental cookie practice
+                  Baked with heart, one batch at a time
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-cocoa-soft">
-                  Lilly&apos;s Cookies started as a kitchen notebook and a pile of
-                  “what if?” ingredients. It&apos;s still that — just with better
-                  scales and slightly fewer burnt edges.
+                  Lilly&apos;s Cookies began in a home kitchen with a love of great
+                  ingredients and better flavor. Today we still bake in small
+                  batches so every cookie tastes the way it should.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-cocoa-soft">
-                  This site is part of the experiment too: a place to share what
-                  we&apos;re testing, what made the cut, and what we&apos;re still
-                  iterating on.
+                  From classic chocolate chip to unexpected seasonal favorites,
+                  everything is made fresh and with care — for sharing, gifting,
+                  or keeping all to yourself.
                 </p>
               </div>
 
@@ -147,18 +147,18 @@ export default function Home() {
                 {[
                   {
                     step: "01",
-                    title: "Hypothesis",
-                    body: "Pick a pairing that shouldn’t work on paper — then bake until it does.",
+                    title: "Quality ingredients",
+                    body: "Real butter, good chocolate, and flavors we stand behind — no shortcuts.",
                   },
                   {
                     step: "02",
-                    title: "Tiny batch",
-                    body: "Enough for tasting notes, not enough to fill a warehouse. Quality over volume.",
+                    title: "Small batches",
+                    body: "We bake in limited quantities so every cookie is fresh and consistent.",
                   },
                   {
                     step: "03",
-                    title: "Drop or scrap",
-                    body: "Winners go on the board. Losers go in the notebook with a better idea for next time.",
+                    title: "Made to share",
+                    body: "Whether it’s a weekend drop or a house classic, these cookies are built for joy.",
                   },
                 ].map((item) => (
                   <li
@@ -193,21 +193,21 @@ export default function Home() {
                   Limited drops
                 </p>
                 <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight sm:text-4xl">
-                  When a batch is ready, it leaves the lab fast.
+                  Fresh batches, available while they last.
                 </h2>
               </div>
               <p className="max-w-xl text-cream/75">
-                No endless inventory. When we like a formula, we bake a small drop,
-                tell the list, and move on to the next experiment. Join if you want
-                first dibs on the weird good ones.
+                We bake in small runs so everything stays fresh. When a special
+                flavor is ready, we announce it to the list first — then it&apos;s
+                first come, first served.
               </p>
             </div>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               {[
-                { title: "Weekend micro-drops", detail: "Announced mid-week" },
-                { title: "Tasting notes included", detail: "What we changed & why" },
-                { title: "No spam, just flour", detail: "Emails when it matters" },
+                { title: "Weekend drops", detail: "Announced mid-week" },
+                { title: "Seasonal flavors", detail: "Rotate throughout the year" },
+                { title: "No spam", detail: "Only when something new is baking" },
               ].map((card) => (
                 <div
                   key={card.title}
@@ -231,11 +231,11 @@ export default function Home() {
                     Stay in the loop
                   </p>
                   <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
-                    Get drop alerts &amp; lab notes
+                    Get drop alerts &amp; new flavors
                   </h2>
                   <p className="mt-3 text-cocoa-soft">
-                    This is a demo signup form for the experiment. Hook it to your
-                    email tool or backend when you&apos;re ready.
+                    Be first to know when limited flavors and weekend drops go
+                    live. We only email when it matters.
                   </p>
                 </div>
 

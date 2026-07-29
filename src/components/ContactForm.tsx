@@ -37,7 +37,7 @@ export function ContactForm() {
       </form>
       {status === "done" && (
         <p className="mt-3 text-sm font-medium text-mint">
-          You&apos;re on the demo list — connect a real backend when ready.
+          Thanks! You&apos;re on the list.
         </p>
       )}
     </div>

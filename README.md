@@ -1,6 +1,6 @@
 # Lilly's Cookies
 
-Experimental cookie & bakery website — small batches, flavor R&D, limited drops.
+Handcrafted cookie & bakery website — small batches, fresh flavors, limited drops.
 
 Built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 

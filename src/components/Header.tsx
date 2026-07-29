@@ -1,6 +1,6 @@
 const links = [
   { href: "#menu", label: "Menu" },
-  { href: "#lab", label: "The Lab" },
+  { href: "#about", label: "About" },
   { href: "#drops", label: "Drops" },
   { href: "#contact", label: "Contact" },
 ];
@@ -21,7 +21,7 @@ export function Header() {
               Lilly&apos;s Cookies
             </p>
             <p className="text-[11px] uppercase tracking-[0.18em] text-cocoa-soft/80">
-              Experimental bakery
+              Handcrafted bakery
             </p>
           </div>
         </a>
@@ -42,7 +42,7 @@ export function Header() {
           href="#contact"
           className="rounded-full bg-cocoa px-4 py-2 text-sm font-medium text-sugar transition hover:bg-cocoa-soft"
         >
-          Join the drop list
+          Join the list
         </a>
       </div>
     </header>

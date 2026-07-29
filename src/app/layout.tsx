@@ -13,9 +13,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Lilly's Cookies — Experimental Bakery Lab",
+  title: "Lilly's Cookies — Handcrafted Bakery",
   description:
-    "Small-batch experimental cookies and bakery treats. Flavor R&D from Lilly's Cookies.",
+    "Small-batch cookies and bakery treats from Lilly's Cookies. Fresh flavors, made with care.",
 };
 
 export default function RootLayout({
