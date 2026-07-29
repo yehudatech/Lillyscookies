@@ -3,7 +3,9 @@ import { ContactForm } from "@/components/ContactForm";
 import { CookieCard } from "@/components/CookieCard";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { InstagramLink } from "@/components/InstagramLink";
 import { popularCookies } from "@/lib/menu";
+import { INSTAGRAM_LABEL } from "@/lib/social";
 
 export default function Home() {
   return (
@@ -233,25 +235,53 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact */}
+        {/* Connect */}
         <section id="contact" className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-5 sm:px-8">
             <div className="overflow-hidden rounded-[2rem] border border-cocoa/10 bg-gradient-to-br from-sugar via-cream to-cream-deep p-8 sm:p-12">
-              <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-berry">
-                    Stay in the loop
+              <div className="mb-10 max-w-2xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-berry">
+                  Connect
+                </p>
+                <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
+                  Stay close to the kitchen
+                </h2>
+                <p className="mt-3 text-cocoa-soft">
+                  Follow us on Instagram for fresh bakes and behind-the-scenes,
+                  or join the list for drop alerts.
+                </p>
+              </div>
+
+              <div className="grid gap-8 lg:grid-cols-2">
+                <div className="rounded-[1.5rem] border border-cocoa/10 bg-sugar p-6 sm:p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-caramel">
+                    Instagram
                   </p>
-                  <h2 className="mt-2 font-[family-name:var(--font-fraunces)] text-3xl font-semibold tracking-tight text-cocoa sm:text-4xl">
-                    Get drop alerts &amp; new flavors
-                  </h2>
-                  <p className="mt-3 text-cocoa-soft">
-                    Be first to know when limited flavors and weekend drops go
-                    live. We only email when it matters.
+                  <h3 className="mt-2 font-[family-name:var(--font-fraunces)] text-xl font-semibold text-cocoa">
+                    See what&apos;s baking
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-cocoa-soft">
+                    Photos, limited drops, and new flavors first — follow{" "}
+                    {INSTAGRAM_LABEL}.
                   </p>
+                  <div className="mt-6">
+                    <InstagramLink />
+                  </div>
                 </div>
 
-                <ContactForm />
+                <div className="rounded-[1.5rem] border border-cocoa/10 bg-sugar p-6 sm:p-8">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-mint">
+                    Email list
+                  </p>
+                  <h3 className="mt-2 font-[family-name:var(--font-fraunces)] text-xl font-semibold text-cocoa">
+                    Get drop alerts
+                  </h3>
+                  <p className="mt-2 mb-5 text-sm leading-relaxed text-cocoa-soft">
+                    Be first to know when limited flavors go live. We only email
+                    when it matters.
+                  </p>
+                  <ContactForm />
+                </div>
               </div>
             </div>
           </div>

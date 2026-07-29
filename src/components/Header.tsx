@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { InstagramLink } from "@/components/InstagramLink";
 
 const links = [
   { href: "/menu", label: "Menu" },
   { href: "/#about", label: "About" },
   { href: "/#drops", label: "Drops" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/#contact", label: "Connect" },
 ];
 
 export function Header() {
@@ -40,12 +41,18 @@ export function Header() {
           ))}
         </nav>
 
-        <Link
-          href="/#contact"
-          className="rounded-full bg-cocoa px-4 py-2 text-sm font-medium text-sugar transition hover:bg-cocoa-soft"
-        >
-          Join the list
-        </Link>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <InstagramLink
+            variant="icon"
+            className="border-cocoa/15 text-cocoa-soft"
+          />
+          <Link
+            href="/#contact"
+            className="rounded-full bg-cocoa px-4 py-2 text-sm font-medium text-sugar transition hover:bg-cocoa-soft"
+          >
+            Join the list
+          </Link>
+        </div>
       </div>
     </header>
   );
